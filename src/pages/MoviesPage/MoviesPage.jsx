@@ -22,7 +22,6 @@ function MoviesPage() {
         }
         const getMovie = async () => {
             const res = await tmdbApi.getMoviesList(movieType.popular, {params})
-            console.log(page)
             setItems(res.results)
         }
         getMovie()
@@ -51,7 +50,7 @@ function MoviesPage() {
                 <h1 className="movies-heading">Movies</h1>
                 <div className="movies-content">
                     {
-                        items.slice(0,18).map((item, i) => (
+                        items.map((item, i) => (
                             <div key={i} className="card">
                                 <Moviescard item={item} category={category.movie}/>
                             </div>

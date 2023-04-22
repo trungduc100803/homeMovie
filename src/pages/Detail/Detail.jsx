@@ -61,11 +61,6 @@ function Detail() {
                         <div className="videos">
                             <Videos/>
                         </div>
-
-                        <div className="similar">
-                            <h2 className="similar-title">Similar</h2>
-                            <MoviesList category={category} type='similar' id={item.id} />
-                        </div>
                     </>
                 )
             }
