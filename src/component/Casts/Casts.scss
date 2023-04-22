@@ -1,0 +1,21 @@
+.casts {
+    display: flex;
+    margin-left: -8px;
+    .cast {
+        width: 120px;
+        height: 25vh;
+        padding:  0 8px ;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        p {
+            text-align: center;
+            font-size: 0.7rem;
+        }
+    }
+}

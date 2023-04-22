@@ -1,0 +1,26 @@
+.movies-page {
+    padding: 100px 50px;
+}
+
+.movies-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+    .card {
+        padding-bottom: 80px;
+    }
+}
+.movies-heading {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.view-more-movie {
+    text-align: center;
+}

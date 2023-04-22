@@ -1,0 +1,32 @@
+.btn {
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: rgb(196, 17, 17);
+    border: 2px solid transparent;
+    transition: all ease 0.3s;
+    box-shadow: rgba(179, 12, 20, 0.863) 0px 2px 15px 0px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 7, 20);
+    box-shadow: rgb(255, 7, 20) 0px 5px 25px 0px;
+}
+
+
+.out-line {
+    border-color: white;
+    box-shadow: none;
+    background-color: transparent;
+
+    &:hover {
+        color: rgb(199, 20, 20);
+        box-shadow: rgb(173, 167, 167) 0px 2px 15px 0px;
+        background-color: white;
+    }
+}

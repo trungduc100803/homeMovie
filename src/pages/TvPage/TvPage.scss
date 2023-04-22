@@ -1,0 +1,27 @@
+.tv-page {
+
+    padding: 100px 50px;
+}
+
+.tv-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card {
+        padding-bottom: 80px;
+    }
+}
+
+.tv-heading{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.view-more-tv {
+    text-align: center;
+}

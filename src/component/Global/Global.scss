@@ -1,0 +1,234 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 62.5%;
+}
+
+* a {
+    text-decoration: none;
+}
+
+* ul, li {
+    list-style: none;
+}
+
+* button {
+    border: none;
+}
+
+
+:root {
+    --padding: 30px;
+    --primary-color: rgb(250, 35, 35);
+}
+
+.swiper-slide{
+    width: 15%;
+}
+
+
+.App  {
+    background-color: black;
+}
+
+/* # Mobile & tablet: width <1024px */
+/* // Mobile & Tablet */
+@media only screen and (max-width: 1023px){
+    .slide-img, .detail-content .container .content-img{
+      display: none ;
+    }
+  
+    .slide-info, .des{
+      padding-right: 0 !important;
+    }
+  
+    .detail-content .container .info{
+        padding-left: 0;
+    }
+    
+  }
+  
+  /* # Mobie: width < 740px */
+  /* // Mobie */
+  @media only screen and (max-width: 739px) {
+    .header .container {
+        display: none;
+    }
+
+    .cotainer-mb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-slide .hero-slide__item .slide-content .slide-info .des{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+    .hero-slide .hero-slide__item .slide-content .slide-info .name {
+        font-size: 1.6rem;
+    }
+
+    .hero-slide .hero-slide__item .slide-content .slide-info .btn-control{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .btn-control__item-mb {
+        width: 100%;
+    }
+
+    .btn-control__item-mb:first-child{
+        margin-bottom: 20px;
+    }
+
+    .mo-list {
+        padding: 20px;
+    }
+
+    .mo-header .mo-heading {
+        font-size: 1rem;
+    }
+
+    .btn-control__item-mb1 {
+        width: 120px;
+    }
+
+    .swiper-slide {
+        width: 100%;
+    }
+    
+    .footer .bg-footer {
+        padding: 20px;
+    }
+
+    .footer .bg-footer .footer-list {
+        padding:20px 0;
+    }
+
+    .footer .bg-footer .footer-list{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer .bg-footer .footer-list .list {
+        width: 50%;
+        margin-bottom: 28px;
+    }
+
+    .movies-page {
+        padding: 100px 20px;
+    }
+
+    .videos {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    iframe{
+        height: 30vh;
+    }
+
+    .video-title {
+        font-size: 1rem;
+    }
+
+    .detail-content .container {
+        width: 90%;
+    }
+
+    .detail-content .container .info .name {
+        font-size: 1.8rem;
+    }
+
+    .detail-content .container .info .castss {
+        display: none;
+    }
+  }
+
+  
+  /* # Tablet: width >= 740px and width < 1024px */
+  /* // Tablet */
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .swiper-slide{
+        width: 46%;
+    }
+
+    .mo-list{
+        padding: 28px;
+    }
+
+    .movies-page, .tv-page {
+        padding: 100px 28px;
+    }
+
+    .detail-content .container {
+        width: 90%;
+    }
+
+    .detail-content .container .info .para{
+        word-wrap: break-word;
+    }
+
+    .casts {
+        overflow-y: auto;
+    }
+
+    .casts::-webkit-scrollbar{
+        display: none;
+    }
+
+    .videos  {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    iframe {
+        height: 60vh;
+    }
+
+    .footer .bg-footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer .bg-footer .footer-list {
+        width: 100%;
+    }
+  }
+  
+  /* # PC Low */
+  /* //PC Low, Ipad Pro */
+  @media (min-width: 1024px) and (max-width: 1239px) {
+    .slide-img .img{
+        width: 30vw !important;
+    }
+
+    .detail-content .container .content-img {
+        display: none;
+    }
+
+    .detail-content .container {
+        width: 90%;
+    }
+
+    .swiper-slide{
+        width: 25%;
+    }
+  }
+    
