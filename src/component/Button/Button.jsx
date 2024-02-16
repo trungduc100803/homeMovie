@@ -1,8 +1,10 @@
 import './Button.scss'
 
+
+
 function Button(props) {
-    return ( 
-        <button 
+    return (
+        <button
             className={props.type ? 'btn out-line' : 'btn'}
             onClick={props.onClick ? () => props.onClick() : null}
         >
