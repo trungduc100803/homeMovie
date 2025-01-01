@@ -1,8 +1,9 @@
 const routes = {
     home: '/homeMovie',
     movies: '/movies',
-    tv:'/tv',
+    tv: '/tv',
     detail: '/:category/:id',
+    login: '/login'
 }
 
 export default routes
